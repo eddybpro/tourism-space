@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --color-brand-1: hsl(0, 0%, 100%);
+  --color-brand-3: hsl(0, 2%, 81%);
+
+  --font-poppins: "Poppins", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-poppins);
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.SingleCrewBox-ImgBox {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.SingleCrewBox-ImgBox > picture > img {
+  width: 100%;
+  height: 100%;
+}
+
+.SingleCrewBox-TxtBox-Role {
+  color: var(--color-brand-3);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.SingleCrewBox-TxtBox-Name {
+  color: var(--color-brand-1);
+  font-size: 3.8rem;
+  margin: 2rem 0;
+}
+
+.SingleCrewBox-TxtBox-Bio {
+  font-size: 1.6rem;
+  color: var(--color-brand-3);
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 580px) {
+  .SingleCrewBox-TxtBox-Name {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .SingleCrewBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+    grid-auto-flow: dense;
+  }
+
+  .SingleCrewBox-ImgBox {
+    width: 100%;
+    max-width: 35rem;
+    margin: -10rem -4rem 0 0;
+    grid-column: 2;
+  }
+
+  .SingleCrewBox-TxtBox {
+    grid-column: 1;
+  }
+}

@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --color-brand-1: hsl(0, 0%, 100%);
+  --color-brand-3: hsl(0, 2%, 81%);
+  --font-poppins: "Poppins", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-poppins);
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.HomeBox {
+  width: 100%;
+  min-height: 100vh;
+  padding: 12.5rem 2rem 3rem 2rem;
+  background: url("../../assets/home/background-home-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.HomeBox-TxtBox-Title {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  color: var(--color-brand-3);
+  font-weight: 400;
+}
+
+.HomeBox-TxtBox-Title > span {
+  display: block;
+  font-size: 3.5rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  color: var(--color-brand-1);
+  letter-spacing: 2px;
+}
+
+.HomeBox-TxtBox-Para {
+  color: var(--color-brand-3);
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 6rem;
+}
+
+.HomeBox-Btn {
+  display: block;
+  margin: auto;
+  width: 15rem;
+  height: 15rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 2rem;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: var(--color-brand-1);
+  font-size: 1.6rem;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.HomeBox-Btn:hover {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 580px) {
+  .HomeBox {
+    width: 100%;
+    min-height: 100vh;
+    padding: 15rem 5rem 3rem 5rem;
+    background: url("../../assets/home/background-home-tablet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .HomeBox-TxtBox-Title {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .HomeBox-TxtBox-Title > span {
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .HomeBox {
+    background: url("../../assets/home/background-home-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    text-align: left;
+  }
+
+  .HomeBox-TxtBox-Title > span {
+    font-size: 6rem;
+    margin: 4.5rem 0;
+  }
+}

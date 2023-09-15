@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --color-brand-1: hsl(0, 0%, 100%);
+
+  --font-poppins: "Poppins", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-poppins);
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.CrewBox {
+  width: 100%;
+  min-height: 100vh;
+  padding: 12.5rem 2rem 3rem 2rem;
+  background: url("../../assets/crew/background-crew-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.CrewBox > h1 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  color: var(--color-brand-1);
+}
+
+@media screen and (min-width: 580px) {
+  .CrewBox {
+    width: 100%;
+    min-height: 100vh;
+    padding: 18rem 5rem 3rem 5rem;
+    background: url("../../assets/crew/background-crew-tablet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .CrewBox > h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .CrewBox {
+    padding: 14rem 5rem 0.5rem 5rem;
+    background: url("../../assets/crew/background-crew-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+  }
+}

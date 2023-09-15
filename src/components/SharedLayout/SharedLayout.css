@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --color-site-2: hsla(0, 0%, 0%, 0.8);
+  --font-poppins: "Poppins", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-poppins);
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.Head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  padding: 2rem;
+  width: 100%;
+}
+
+.HeadBlur {
+  width: 100%;
+  align-items: flex-start;
+  height: 100vh;
+  background-color: var(--color-site-2);
+  z-index: 10;
+}
+
+.Head-Logo {
+  display: block;
+  width: 5rem;
+}
+
+.HeadBlur .Head-HamburgerBtn {
+  margin-top: 1rem;
+}
+
+.Head-HamburgerBtn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 580px) {
+  .Head {
+    padding: 2rem 4rem;
+  }
+
+  .Head-Logo {
+    width: 6rem;
+  }
+
+  .Head-HamburgerBtn {
+    width: 3rem;
+  }
+
+  .Head-HamburgerBtn > img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .Head-HamburgerBtn {
+    display: none;
+  }
+}

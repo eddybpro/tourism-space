@@ -1,0 +1,43 @@
+:root {
+  --color-brand-1: hsl(0, 0%, 100%);
+  --color-brand-3: hsl(0, 2%, 81%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.NavbarCrew {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.NavbarCrew-CrewLink {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--color-brand-3);
+  opacity: 0.6;
+}
+
+.NavbarCrew-CrewLink.active {
+  opacity: 1;
+  filter: brightness(180%);
+}
+@media screen and (min-width: 901px) {
+  .NavbarCrew {
+    justify-content: flex-start;
+  }
+}
