@@ -16,7 +16,7 @@ function SharedLayout() {
 
   return (
     <>
-      <div className={menu ? "Head HeadBlur" : "Head"}>
+      <div className={menu && !isLarge ? "Head HeadBlur" : "Head"}>
         <Link to="/">
           <img src={Logo} alt="space tourism" className="Head-Logo" />
         </Link>
