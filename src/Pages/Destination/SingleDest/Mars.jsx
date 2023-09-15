@@ -4,7 +4,7 @@ import "./SingleDest.css";
 
 function Mars() {
   return (
-    <div className="SingleDestBox">
+    <div className="SingleDestBox" role="main">
       <div className="SingleDestBox-ImgBox">
         <picture>
           <source type="image/webp" srcSet={data.destinations[1].images.webp} />

@@ -5,7 +5,7 @@ import "./SingleTech.css";
 
 function SpacePort() {
   return (
-    <div className="SingleTech">
+    <div className="SingleTech" role="main">
       <div className="SingleTech-ImgBox">
         <picture>
           <source

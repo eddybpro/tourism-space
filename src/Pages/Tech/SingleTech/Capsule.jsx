@@ -4,7 +4,7 @@ import "./SingleTech.css";
 
 function Capsule() {
   return (
-    <div className="SingleTech">
+    <div className="SingleTech" role="main">
       <div className="SingleTech-ImgBox">
         <picture>
           <source

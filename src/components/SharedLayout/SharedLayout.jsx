@@ -17,7 +17,7 @@ function SharedLayout() {
   return (
     <>
       <div className={menu && !isLarge ? "Head HeadBlur" : "Head"}>
-        <Link to="/">
+        <Link to="/" role="banner">
           <img src={Logo} alt="space tourism" className="Head-Logo" />
         </Link>
         {isLarge ? (

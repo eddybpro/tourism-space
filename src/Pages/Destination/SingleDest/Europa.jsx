@@ -4,7 +4,7 @@ import "./SingleDest.css";
 
 function Europa() {
   return (
-    <div className="SingleDestBox">
+    <div className="SingleDestBox" role="main">
       <div className="SingleDestBox-ImgBox">
         <picture>
           <source type="image/webp" srcSet={data.destinations[2].images.webp} />

@@ -4,7 +4,7 @@ import { data } from "../../../data";
 
 function Douglas() {
   return (
-    <div className="SingleCrewBox">
+    <div className="SingleCrewBox" role="main">
       <div className="SingleCrewBox-ImgBox">
         <picture>
           <source type="image/webp" srcSet={data.crew[0].images.webp} />

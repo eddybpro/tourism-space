@@ -2,8 +2,8 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div className="HomeBox">
-      <div className="HomeBox-TxtBox">
+    <div className="HomeBox" role="main">
+      <div className="HomeBox-TxtBox" role="contentinfo">
         <h1 className="HomeBox-TxtBox-Title">
           so, you want to travel to <span>space</span>
         </h1>
